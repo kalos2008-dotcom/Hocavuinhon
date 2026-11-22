@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hồ cá vui nhộn</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=-1.0">
+    <title>Document</title>
+    <style>
+        #hoca{width: 90%; border: 1px solid rgb(229, 255, 0); height: 70%; position: fixed; bottom: 0; left: 20px;border-top: 0; background-color: rgb(220, 243, 245);}
+        @keyframes shark {
+            0%{left: 0;}
+            25%{translate: 200px 0px;}
+            48%{translate: 400px 0px;}
+            52%{translate: 400px 0px;}
+            75%{translate: 200px 0px;}
+            100%{left: 120%;transform: scaleX(-1);}
+        }
+        #camap{left: 100px; top: 400px;position:bottom ;width:120px; animation-name: shark;animation-duration: 20s; animation-iteration-count: infinite;}
+        @keyframes tt {
+            0%{left: 0;}
+            20%{translate: 200px 0px;}
+            49%{translate: 400px 20px;}
+            55%{translate: 400px 0px;}
+            75%{translate: 200px 0px;}
+            100%{left: 0;transform: scaleX(-1);}
+        }
+        #rua{left: 100px; top: 400px;position: absolute; width: 100px; animation-name: tt;animation-duration: 24s; animation-iteration-count: infinite;}
+        @keyframes tholan {
+            0%{left: 0;}
+            20%{translate: 200px 0px;}
+            49%{translate: 400px 20px; rotate: -180deg;}
+            55%{translate: 400px 0px;}
+            75%{translate: 200px 0px;}
+            100%{left: 0;transform: scalex(-1);}
+        }
+        #diver{left: 50px; top: 400px;position: fixed; width: 100px; animation-name: tholan;animation-duration: 15s; animation-iteration-count: infinite;}
+    </style>
+</head>
+<body>
+    <div id="hoca">
+        <img id="camap" src="shark.png" />
+        <img id="rua" src="turtle.png" />
+        <img id="diver" src="diver1.png" />
+    </div>
+</body>
+</html>
